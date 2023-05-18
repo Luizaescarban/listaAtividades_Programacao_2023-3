@@ -12,10 +12,24 @@
     */
 
     //ENTRADA
-
+    const turno = prompt(`Informe o turno em que você estuda com M-matutino ou V-Vespertino ou N- Noturno:`).toUpperCase().trim();
     
     //PROCESSAMENTO
-
+    if (  turno == "M" || turno == "V" || turno == "N"){
+        if (turno == "M"){
+            alert(`Bom Dia!`);
+        }
+        else if(turno == "V"){
+            alert(`Boa Tarde!`)
+        }
+        else {
+            alert(`Boa Noite!`)
+        }
+        }
+        else{
+            alert(`Insira APENAS se vocẽ estuda em M-matutino ou V-Vespertino ou N- Noturno!`)
+        }
+    
     
     //SAÍDA
     
