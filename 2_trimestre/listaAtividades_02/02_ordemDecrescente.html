@@ -5,9 +5,9 @@
     */
 
     //ENTRADA
-    const num1 = Number(prompt(`Informe um número`).trim);
-    const num2 = Number(prompt(`Informe um segundo número`).trim);
-    const num3 = Number(prompt(`Informe um  terceiro número`).trim);
+    const num1 = Number(prompt(`Informe um número`));
+    const num2 = Number(prompt(`Informe um segundo número`));
+    const num3 = Number(prompt(`Informe um  terceiro número`));
     
     //PROCESSAMENTO
     if(num1 > num2 > num3){
@@ -25,9 +25,13 @@
     else if (num3 > num2 > num1){
         alert(`em ordem decrescente os números são ${num3}, ${num2} e ${num1}`);
     }
-    else {
+    else if (num3 > num1 > num2){
         alert(`em ordem decrescente os números são ${num3}, ${num1} e ${num2}`);
     }
+    else{
+        alert(`Insira apenas número`)
+    }
+    
     //SAÍDA
     
 </script>
