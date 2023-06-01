@@ -5,33 +5,37 @@
     */
 
     //ENTRADA
-    const num1 = Number(prompt(`Informe um número`));
-    const num2 = Number(prompt(`Informe um segundo número`));
-    const num3 = Number(prompt(`Informe um  terceiro número`));
-    
+    const num1 = Number(prompt(`Informe um numero`).trim().replace(",","."));
+    const num2 = Number(prompt(`Informe um numero`).trim().replace(",","."));
+    const num3 = Number(prompt(`Informe um numero`).trim().replace(",","."));
     //PROCESSAMENTO
-    if(num1 > num2 > num3){
-        alert(`em ordem decrescente os números são ${num1}, ${num2}, ${num3}`);
+   if (num1 > num2 && num1 > num3) {
+    if (num2 > num3) {
+        alert(`Os números em ordem decrescente são ${num1}, ${num2}, ${num3}`);
     }
-    else if(num1 > num3 > num2){
-        alert(`em ordem decrescente os números são ${num1}, ${num3}, ${num2}`);
+    else {
+        alert(`Os números em ordem decrescente são ${num1}, ${num3}, ${num2}`)
     }
-    else if( num2 > num1 > num3) {
-        alert(`em ordem decrescente os números são ${num2}, ${num1} e ${num3}`);
+   }
+   else if (num2 > num1 && num2 > num3) {
+    if (num1 > num3) {
+        alert(`Os números em ordem decrescente são ${num2}, ${num1}, ${num3}`)
     }
-    else if (num2 > num3 > num1) {
-        alert(`em ordem decrescente os números são ${num2}, ${num3} e ${num1}`);
+    else {
+        alert(`Os números em ordem decrescente são ${num2}, ${num3}, ${num1}`)
     }
-    else if (num3 > num2 > num1){
-        alert(`em ordem decrescente os números são ${num3}, ${num2} e ${num1}`);
+   }
+   else if (num3 > num1 && num3 > num2) {
+    if (num1 > num2) {
+        alert(`Os números em ordem decrescente são ${num3}, ${num1}, ${num2}`)
     }
-    else if (num3 > num1 > num2){
-        alert(`em ordem decrescente os números são ${num3}, ${num1} e ${num2}`);
+    else {
+        alert(`Os números em ordem decrescente são ${num3}, ${num2}, ${num1}`)
     }
-    else{
-        alert(`Insira apenas número`)
-    }
-    
+   }
+   else {
+    alert(`Valores inválidos`)
+   }
     //SAÍDA
-    
+
 </script>

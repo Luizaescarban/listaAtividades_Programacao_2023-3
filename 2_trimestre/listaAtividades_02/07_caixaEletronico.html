@@ -9,7 +9,7 @@
     //0,5 na prova: Eduardo de Oliveira
     //ENTRADA
     let saque = Number(prompt(`Insira o valor do saque. Entre 10 e 600`).trim())
-    
+
     //PROCESSAMENTO
     let mensagemFinal = "O saque será efetuado com: ";
     let notasCem = 0;
@@ -18,14 +18,14 @@
     let notasCinco = 0;
 
     if (saque >= 10 && saque <= 600) {
-    notasCem = Math.floor(saque / 100);
-    saque = saque % 100;
-    notasCinquenta = Math.floor(saque / 50);
-    saque = saque % 50;
-    notasDez = Math.floor(saque / 10);
-    saque = saque % 10;
-    notasCinco = Math.floor(saque / 5);
-    saque = saque % 5;
+        notasCem = Math.floor(saque / 100);
+        saque = saque % 100;
+        notasCinquenta = Math.floor(saque / 50);
+        saque = saque % 50;
+        notasDez = Math.floor(saque / 10);
+        saque = saque % 10;
+        notasCinco = Math.floor(saque / 5);
+        saque = saque % 5;
     }
     else {
         alert(`Valor inválido`)
@@ -35,7 +35,7 @@
         mensagemFinal = mensagemFinal + notasCem + " notas de 100;  "
     }
     if (notasCinquenta > 0) {
-        mensagemFinal = mensagemFinal + notasCinquenta + " notas de 50;  " 
+        mensagemFinal = mensagemFinal + notasCinquenta + " notas de 50;  "
     }
     if (notasDez > 0) {
         mensagemFinal = mensagemFinal + notasDez + " notas de 10;  "
@@ -48,8 +48,8 @@
     }
 
     alert(mensagemFinal)
-    
-    
+
+
 
     //SAÍDA
 
