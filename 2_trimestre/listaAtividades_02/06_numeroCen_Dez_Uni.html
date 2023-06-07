@@ -14,30 +14,11 @@
     let num = Number(prompt(`Informe um número inteiro menor que 1000`).trim());
 
     //PROCESSAMENTO
-    let mensagemFinal = "O número tem: ";
-    let centena = 0;
-    let dezena = 0;
-
-    if (num > 0 && num < 1000) {
-        centena = Math.floor(num / 100);
-        num = num % 100;
-        dezena = Math.floor(num / 10);
-        num = num % 10;
+    if(num > 0 && num < 1000){
+        const centena = Math.floor(num / 100);
+        const dezena = Math.floor(num % 100 / 10);
+        const unidades = centena / 100
     }
-    else {
-        alert(`Valor inválido`);
-    }
-
-    if (centena > 0) {
-        mensagemFinal = mensagemFinal + centena + " Centena(s); ";
-    }
-    if (dezena > 0) {
-        mensagemFinal = mensagemFinal + dezena + " dezena(s); ";
-    }
-    if (num > 0) {
-        mensagemFinal = mensagemFinal + num + " unidade(s). ";
-    }
-    alert(mensagemFinal)
 
     //SAÍDA
 
